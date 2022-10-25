@@ -21,12 +21,12 @@ class MotherAccount extends Account {
         return "Saldo attuale " + this.secondWhitDraw();
     }
     addInterest() {
-        return this.balance() + 2, 5;
+        return (this.secondWhitDraw() * 10) / 100;
     }
 }
 let mom = new MotherAccount(0);
 console.log("Saldo della madre:" + mom.balance());
-console.log("Interessi:" + mom.addInterest());
+console.log("Interessi del 10% per la madre di:" + mom.addInterest());
 class SonAccount extends Account {
     balance() {
         return "Saldo attuale " + this.secondWhitDraw();
